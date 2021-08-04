@@ -12,7 +12,8 @@ console.log('')
 
 // cpus
 console.log('cpus')
-console.log(os.cpus().length)
+console.log(os.cpus().length);
+console.table(os.cpus());
 console.log('')
 
 // Errors and signs of OS
@@ -65,5 +66,5 @@ console.log('')
 
 // Actived Network interfaces right now
 console.log('Network Interfaces right now')
-console.log(os.networkInterfaces())
+console.table(os.networkInterfaces());
 console.log('')
