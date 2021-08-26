@@ -1,2 +1,6 @@
 # C++
 /modulos/natives/build/*
+
+# NPM
+/node_modules
+/packages/npm/node_modules
