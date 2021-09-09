@@ -8,7 +8,8 @@ function router(request, response) {
 
     switch (request.url) {
         case '/hello':
-            response.write('Hello there, How are you?');
+            let greeting = hello();
+            response.write(greeting);
             response.end();
             break;
         default:
@@ -18,6 +19,10 @@ function router(request, response) {
     // response.writeHead(201, { 'Content-type': 'text/plain' });
     // response.write('Hello!!, I already know how to use HTTP in Nodejs');
     // response.end();
+}
+
+function hello () {
+    return 'Hello there, How are you?';
 }
 
 console.log('Listen https in port: ' + (process.env.PORT || 3000))
