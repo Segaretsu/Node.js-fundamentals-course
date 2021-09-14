@@ -10,10 +10,19 @@ function asynchronous(callback) {
     }, 1000);
 }
 
+// try {
+    // Try catch, dont work in asynchronous functions
 asynchronous(function (err, data) {
-    if(err){
+    if (err) {
         console.error('We have a mistake');
         console.error(err);
+        // throw err;
         return false;
     }
+
+    console.log('Everything went well, my data is: ', data);
 });
+// } catch (err) {
+//     console.error('We have catch a error');
+//     console.error(err);
+// }
