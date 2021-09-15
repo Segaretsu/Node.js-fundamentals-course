@@ -7,3 +7,4 @@
 /packages/utils/node_modules
 /tools/scrapping/node_modules
 /tools/automation/node_modules
+/tools/electron/node_modules
